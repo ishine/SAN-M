@@ -1,0 +1,4 @@
+Log file created at: 2021/07/05 11:09:43
+Running on machine: VS002
+Log line format: [IWEF]mmdd hh:mm:ss.uuuuuu threadid file:line] msg
+F0705 11:09:43.718356 30308 opkernel_instruction_type.cpp:594] Check failed: MaybeIsOk(std::move(LocalCallOpKernelUtil::Infer(instruction))) 

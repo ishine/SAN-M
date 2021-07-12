@@ -1,0 +1,20 @@
+Log file created at: 2021/06/29 15:16:56
+Running on machine: VS002
+Log line format: [IWEF]mmdd hh:mm:ss.uuuuuu threadid file:line] msg
+I0629 15:16:56.736469 114908 global.h:36] NewGlobal 14cudaDeviceProp
+I0629 15:16:57.152421 114908 global.h:36] NewGlobal N7oneflow7EnvDescE
+I0629 15:16:57.152475 114908 global.h:36] NewGlobal N7oneflow10ProcessCtxE
+I0629 15:16:57.152484 114908 env_global_objects_scope.cpp:112] using rpc backend: local
+I0629 15:16:57.152551 114908 global.h:36] NewGlobal N7oneflow12ResourceDescE
+I0629 15:16:57.152559 114908 global.h:36] NewGlobal N7oneflow12ResourceDescE
+I0629 15:16:57.159457 114908 global.h:36] NewGlobal N7oneflow10ThreadPoolE
+I0629 15:16:57.160511 114908 global.h:36] NewGlobal N7oneflow16EagerNcclCommMgrE
+I0629 15:16:57.160521 114908 global.h:36] NewGlobal N7oneflow18CudnnConvAlgoCacheE
+I0629 15:16:57.160529 114908 global.h:36] NewGlobal N7oneflow2vm19VirtualMachineScopeE
+I0629 15:16:57.160537 114908 global.h:36] NewGlobal N7oneflow9OneflowVME
+I0629 15:16:57.170549 114908 global.h:36] NewGlobal N7oneflow27EagerJobBuildAndInferCtxMgrE
+I0629 15:16:57.170572 114908 global.h:36] NewGlobal N7oneflow12EpollCommNetE
+I0629 15:16:57.170653 114908 epoll_comm_network.cpp:63] CommNet:Epoll listening on 0.0.0.0:42378
+I0629 15:16:57.170678 114908 epoll_comm_network.cpp:198] machine 0 sockfd -1
+I0629 15:16:57.170763 114908 global.h:36] NewGlobal N7oneflow9TransportE
+F0629 15:16:57.201006 115473 slice_kernel.cpp:101] Check failed: start_vec.size() == ndim (3 vs. 2) 

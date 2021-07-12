@@ -1,0 +1,4 @@
+Log file created at: 2021/06/29 15:14:50
+Running on machine: VS002
+Log line format: [IWEF]mmdd hh:mm:ss.uuuuuu threadid file:line] msg
+F0629 15:14:50.339623 113690 slice_kernel.cpp:101] Check failed: start_vec.size() == ndim (3 vs. 2) 

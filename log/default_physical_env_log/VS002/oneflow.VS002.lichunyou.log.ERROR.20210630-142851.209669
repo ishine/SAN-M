@@ -1,0 +1,4 @@
+Log file created at: 2021/06/30 14:28:51
+Running on machine: VS002
+Log line format: [IWEF]mmdd hh:mm:ss.uuuuuu threadid file:line] msg
+F0630 14:28:51.034132 210062 empty_kernel.cpp:32] Check failed: elem_cnt > 0 (0 vs. 0) 

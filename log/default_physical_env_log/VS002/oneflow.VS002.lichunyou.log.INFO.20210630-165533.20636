@@ -1,0 +1,19 @@
+Log file created at: 2021/06/30 16:55:33
+Running on machine: VS002
+Log line format: [IWEF]mmdd hh:mm:ss.uuuuuu threadid file:line] msg
+I0630 16:55:33.190351 20636 global.h:36] NewGlobal 14cudaDeviceProp
+I0630 16:55:33.294610 20636 global.h:36] NewGlobal N7oneflow7EnvDescE
+I0630 16:55:33.294684 20636 global.h:36] NewGlobal N7oneflow10ProcessCtxE
+I0630 16:55:33.294704 20636 env_global_objects_scope.cpp:111] using rpc backend: local
+I0630 16:55:33.294730 20636 global.h:36] NewGlobal N7oneflow12ResourceDescE
+I0630 16:55:33.294746 20636 global.h:36] NewGlobal N7oneflow12ResourceDescE
+I0630 16:55:33.297266 20636 global.h:36] NewGlobal N7oneflow10ThreadPoolE
+I0630 16:55:33.298784 20636 global.h:36] NewGlobal N7oneflow16EagerNcclCommMgrE
+I0630 16:55:33.298796 20636 global.h:36] NewGlobal N7oneflow18CudnnConvAlgoCacheE
+I0630 16:55:33.298802 20636 global.h:36] NewGlobal N7oneflow2vm19VirtualMachineScopeE
+I0630 16:55:33.298808 20636 global.h:36] NewGlobal N7oneflow9OneflowVME
+I0630 16:55:33.307997 20636 global.h:36] NewGlobal N7oneflow27EagerJobBuildAndInferCtxMgrE
+I0630 16:55:33.308022 20636 global.h:36] NewGlobal N7oneflow12EpollCommNetE
+I0630 16:55:33.308104 20636 epoll_comm_network.cpp:63] CommNet:Epoll listening on 0.0.0.0:38186
+I0630 16:55:33.308130 20636 epoll_comm_network.cpp:198] machine 0 sockfd -1
+I0630 16:55:33.308221 20636 global.h:36] NewGlobal N7oneflow9TransportE

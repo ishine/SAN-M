@@ -1,0 +1,24 @@
+Log file created at: 2021/06/30 15:18:55
+Running on machine: VS002
+Log line format: [IWEF]mmdd hh:mm:ss.uuuuuu threadid file:line] msg
+E0630 15:18:55.074710 226070 maybe.h:247] 
+error_summary: "Cannot find the kernel matching Current OperatorConf. "
+msg: " The Info of OperatorConf are \n op_name: expand126\n op_type_name: expand\n DeviceType_Name: kCPU\n DataType_Name of in_0: kInt64\n DataType_Name of out_0: kInt64"
+stack_frame {
+  location: "/data/lichunyou/package/oneflow/oneflow/user/kernels/stateful_local_opkernel.cpp:402"
+  function: "ChooseOpKernel"
+}
+stack_frame {
+  location: "/data/lichunyou/package/oneflow/oneflow/core/eager/opkernel_instruction_type.cpp:448"
+  function: "Infer"
+}
+op_kernel_not_found_error {
+  op_kernels_not_found_debug_str: "((device_tag == gpu [False]) and (data_type of tensor \'in\' == kFloat))"
+  op_kernels_not_found_debug_str: "((device_tag == gpu [False]) and (data_type of tensor \'in\' == kDouble))"
+  op_kernels_not_found_debug_str: "((device_tag == gpu [False]) and (data_type of tensor \'in\' == kFloat16))"
+  op_kernels_not_found_debug_str: "((device_tag == gpu [False]) and (data_type of tensor \'in\' == kInt32))"
+  op_kernels_not_found_debug_str: "((device_tag == cpu [True]) and (data_type of tensor \'in\' == kFloat [False]))"
+  op_kernels_not_found_debug_str: "((device_tag == cpu [True]) and (data_type of tensor \'in\' == kDouble [False]))"
+  op_kernels_not_found_debug_str: "((device_tag == cpu [True]) and (data_type of tensor \'in\' == kInt32 [False]))"
+}
+F0630 15:18:55.082448 226070 opkernel_instruction_type.cpp:594] Check failed: MaybeIsOk(std::move(LocalCallOpKernelUtil::Infer(instruction))) 

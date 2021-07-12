@@ -1,0 +1,29 @@
+Log file created at: 2021/07/07 11:30:30
+Running on machine: VS002
+Log line format: [IWEF]mmdd hh:mm:ss.uuuuuu threadid file:line] msg
+E0707 11:30:30.904367 54417 maybe.h:247] 
+error_summary: "Cannot find the kernel matching Current OperatorConf. "
+msg: " The Info of OperatorConf are \n op_name: constant0\n op_type_name: constant\n DeviceType_Name: kCPU\n DataType_Name of out_0: kChar"
+stack_frame {
+  location: "/data/lichunyou/package/oneflow/oneflow/user/kernels/stateful_local_opkernel.cpp:402"
+  function: "ChooseOpKernel"
+}
+stack_frame {
+  location: "/data/lichunyou/package/oneflow/oneflow/core/eager/opkernel_instruction_type.cpp:448"
+  function: "Infer"
+}
+op_kernel_not_found_error {
+  op_kernels_not_found_debug_str: "((device_tag == cpu [True]) and (dtype == kFloat [False]))"
+  op_kernels_not_found_debug_str: "((device_tag == gpu [False]) and (dtype == kFloat))"
+  op_kernels_not_found_debug_str: "((device_tag == cpu [True]) and (dtype == kDouble [False]))"
+  op_kernels_not_found_debug_str: "((device_tag == gpu [False]) and (dtype == kDouble))"
+  op_kernels_not_found_debug_str: "((device_tag == cpu [True]) and (dtype == kInt8 [False]))"
+  op_kernels_not_found_debug_str: "((device_tag == gpu [False]) and (dtype == kInt8))"
+  op_kernels_not_found_debug_str: "((device_tag == cpu [True]) and (dtype == kInt32 [False]))"
+  op_kernels_not_found_debug_str: "((device_tag == gpu [False]) and (dtype == kInt32))"
+  op_kernels_not_found_debug_str: "((device_tag == cpu [True]) and (dtype == kInt64 [False]))"
+  op_kernels_not_found_debug_str: "((device_tag == gpu [False]) and (dtype == kInt64))"
+  op_kernels_not_found_debug_str: "((device_tag == cpu [True]) and (dtype == kUInt8 [False]))"
+  op_kernels_not_found_debug_str: "((device_tag == gpu [False]) and (dtype == kUInt8))"
+}
+F0707 11:30:30.934583 54417 opkernel_instruction_type.cpp:598] Check failed: MaybeIsOk(std::move(LocalCallOpKernelUtil::Infer(instruction))) 

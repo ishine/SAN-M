@@ -1,0 +1,40 @@
+Log file created at: 2021/06/30 14:07:13
+Running on machine: VS002
+Log line format: [IWEF]mmdd hh:mm:ss.uuuuuu threadid file:line] msg
+I0630 14:07:13.058400 204828 global.h:36] NewGlobal 14cudaDeviceProp
+I0630 14:07:13.163605 204828 global.h:36] NewGlobal N7oneflow7EnvDescE
+I0630 14:07:13.163662 204828 global.h:36] NewGlobal N7oneflow10ProcessCtxE
+I0630 14:07:13.163672 204828 env_global_objects_scope.cpp:111] using rpc backend: local
+I0630 14:07:13.163691 204828 global.h:36] NewGlobal N7oneflow12ResourceDescE
+I0630 14:07:13.163700 204828 global.h:36] NewGlobal N7oneflow12ResourceDescE
+I0630 14:07:13.165395 204828 global.h:36] NewGlobal N7oneflow10ThreadPoolE
+I0630 14:07:13.166661 204828 global.h:36] NewGlobal N7oneflow16EagerNcclCommMgrE
+I0630 14:07:13.166672 204828 global.h:36] NewGlobal N7oneflow18CudnnConvAlgoCacheE
+I0630 14:07:13.166680 204828 global.h:36] NewGlobal N7oneflow2vm19VirtualMachineScopeE
+I0630 14:07:13.166688 204828 global.h:36] NewGlobal N7oneflow9OneflowVME
+I0630 14:07:13.177955 204828 global.h:36] NewGlobal N7oneflow27EagerJobBuildAndInferCtxMgrE
+I0630 14:07:13.177992 204828 global.h:36] NewGlobal N7oneflow12EpollCommNetE
+I0630 14:07:13.178097 204828 epoll_comm_network.cpp:63] CommNet:Epoll listening on 0.0.0.0:37520
+I0630 14:07:13.178135 204828 epoll_comm_network.cpp:198] machine 0 sockfd -1
+I0630 14:07:13.178259 204828 global.h:36] NewGlobal N7oneflow9TransportE
+E0630 14:07:14.416074 205028 maybe.h:247] 
+error_summary: "Cannot find the kernel matching Current OperatorConf. "
+msg: " The Info of OperatorConf are \n op_name: expand150\n op_type_name: expand\n DeviceType_Name: kCPU\n DataType_Name of in_0: kInt64\n DataType_Name of out_0: kInt64"
+stack_frame {
+  location: "/data/lichunyou/package/oneflow/oneflow/user/kernels/stateful_local_opkernel.cpp:402"
+  function: "ChooseOpKernel"
+}
+stack_frame {
+  location: "/data/lichunyou/package/oneflow/oneflow/core/eager/opkernel_instruction_type.cpp:448"
+  function: "Infer"
+}
+op_kernel_not_found_error {
+  op_kernels_not_found_debug_str: "((device_tag == gpu [False]) and (data_type of tensor \'in\' == kFloat))"
+  op_kernels_not_found_debug_str: "((device_tag == gpu [False]) and (data_type of tensor \'in\' == kDouble))"
+  op_kernels_not_found_debug_str: "((device_tag == gpu [False]) and (data_type of tensor \'in\' == kFloat16))"
+  op_kernels_not_found_debug_str: "((device_tag == gpu [False]) and (data_type of tensor \'in\' == kInt32))"
+  op_kernels_not_found_debug_str: "((device_tag == cpu [True]) and (data_type of tensor \'in\' == kFloat [False]))"
+  op_kernels_not_found_debug_str: "((device_tag == cpu [True]) and (data_type of tensor \'in\' == kDouble [False]))"
+  op_kernels_not_found_debug_str: "((device_tag == cpu [True]) and (data_type of tensor \'in\' == kInt32 [False]))"
+}
+F0630 14:07:14.426699 205028 opkernel_instruction_type.cpp:594] Check failed: MaybeIsOk(std::move(LocalCallOpKernelUtil::Infer(instruction))) 
